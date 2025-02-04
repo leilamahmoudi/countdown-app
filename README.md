@@ -1,6 +1,6 @@
 # Countdown App
 
-This is a countdown app built with Vite, React, TypeScript, and Node.js, which allows users to input an event name and an end date, then displays a real-time countdown to the event.
+This is a countdown app built with Vite, React, TypeScript, which allows users to input an event name and an end date, then displays a real-time countdown to the event.
 
 ## Features
 
