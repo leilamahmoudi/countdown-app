@@ -44,3 +44,15 @@ This is a countdown app built with Vite, React, TypeScript, which allows users t
 The app is hosted on [Netlify](https://www.netlify.com/) and can be accessed at:
 
 [https://eventticker.netlify.app/](https://eventticker.netlify.app/)
+
+### App Screenshot
+
+
+<img width="1511" alt="Screenshot 2025-02-04 at 20 35 23" src="https://github.com/user-attachments/assets/ac6c3a00-e0d8-4170-8d64-a9452789af14" />
+
+<img width="1512" alt="Screenshot 2025-02-04 at 20 37 54" src="https://github.com/user-attachments/assets/30ae2aea-73d2-4956-a93f-a46a033fba06" />
+
+<img width="1502" alt="Screenshot 2025-02-04 at 20 38 31" src="https://github.com/user-attachments/assets/6f285b4e-c178-4eee-bc57-58c68cbd851e" />
+
+<img width="298" alt="Screenshot 2025-02-04 at 20 54 44" src="https://github.com/user-attachments/assets/80087598-dbe6-41fc-aaf7-2afa4a422a68" />
+
