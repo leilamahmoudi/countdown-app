@@ -37,29 +37,31 @@ const EventForm: FC<Props> = ({
   };
 
   return (
-    <div className="form-container">
-      <form>
-        <div className="input-group">
-          <label htmlFor="eventName">Title</label>
-          <input
-            id="eventName"
-            type="text"
-            value={eventName}
-            onChange={handleEventNameChange}
-          />
-        </div>
-        <div className="input-group">
-          <label htmlFor="endDate">Date</label>
-          <input
-            id="endDate"
-            type="datetime-local"
-            value={endDate}
-            onChange={handleDateChange}
-          />
-        </div>
-        {error && <p className="error">{error}</p>}
-      </form>
-    </div>
+    <>
+      <div className="form-container">
+        <form>
+          <div className="input-group">
+            <label htmlFor="eventName">Title</label>
+            <input
+              id="eventName"
+              type="text"
+              value={eventName}
+              onChange={handleEventNameChange}
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="endDate">Date</label>
+            <input
+              id="endDate"
+              type="datetime-local"
+              value={endDate}
+              onChange={handleDateChange}
+            />
+          </div>
+        </form>
+      </div>
+      {error && <p className="error">{error}</p>}
+    </>
   );
 };
 

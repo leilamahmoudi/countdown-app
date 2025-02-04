@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Countdown App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a countdown app built with Vite, React, TypeScript, and Node.js, which allows users to input an event name and an end date, then displays a real-time countdown to the event.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Allows users to set the event name and end date.
+- Displays the time remaining in Days, Hours, Minutes, and Seconds (e.g., 3 days, 15 h, 20 m, 5 s).
+- The countdown updates every second.
+- Text dynamically resizes to fit the available screen space.
+- Event name and end date are persisted between page reloads using `localStorage`.
+- Responsive design works in both portrait and landscape modes.
 
-## Expanding the ESLint configuration
+## How to Run the Project Locally
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/countdown-app-v1.git
+   cd countdown-app-v1
+   ```
+2. Install dependencies:
+   npm install
+   3.Start the development server:
+   npm run dev
+3. Open your browser and go to http://localhost:5173 to see the app in action.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React
+- TypeScript
+- Vite
+- date-fns (for date formatting)
+- CSS (for styling)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Next Steps / Possible Improvements
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Mobile-First Design**: Enhance responsiveness for mobile screens.
+- **Improved Accessibility**: Add ARIA labels for better screen reader support.
+- **Notification Feature**: Send users a notification when the event is reached.
+- **Unit Tests**: Write unit tests for the components using Jest or React Testing Library.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Deployment
+
+The app is hosted on [Netlify](https://www.netlify.com/) and can be accessed at:
+
+[https://eventticker.netlify.app/](https://eventticker.netlify.app/)

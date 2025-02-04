@@ -21,15 +21,23 @@ const App: React.FC = () => {
   return (
     <div className="container">
       <div className="countdown-container">
-        {eventName && (
-          <div className="event-name">
-            <FitText text={`Time to ${eventName}`} />
+        {!eventName && !endDate ? (
+          <div className="placeholder-text">
+            Please add your event and time!
           </div>
-        )}
-        {endDate && (
-          <div className="countdown">
-            <Countdown endDate={endDate} />
-          </div>
+        ) : (
+          <>
+            {eventName && (
+              <div className="event-name">
+                <FitText text={`Time to ${eventName}`} />
+              </div>
+            )}
+            {endDate && (
+              <div className="countdown">
+                <Countdown endDate={endDate} />
+              </div>
+            )}
+          </>
         )}
       </div>
       <EventForm
